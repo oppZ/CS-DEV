@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Beignets lovers</title>
+        <link rel="icon" href="../images/site/page-icone.ico">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
+            defer="true">
+        </script>
+        <script
+            src="../js/shared.js"
+            defer="true">
+        </script>
+        <script
+            src="../js/custom.js"
+            defer="true">
+        </script>
+        <script
+            src="../js/boutonHautPage.js"
+            defer="true">
+        </script>
+    </head>
+
+    <body>
+
+        <div id="header"></div>
+        <div id="hautPage"></div>
+        <div class="panier">
+            <main>
+                <form name="customisation" method="get">
+                    <ul id="listeCustom">
+                        <li>
+                            <ul id="typeBase">
+                                <h2>Base</h2>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul id="typeGlacage">
+                                <h2>Glacage</h2>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul id="typeSaupoudrage">
+                                <h2>Saupoudrage</h2>
+                            </ul>
+                        </li>
+                        <li>
+                            <input type="button" value="Valider" onclick="validateForm()">
+                        </li>
+                    </ul>
+                </form>
+                
+            </main>
+            <aside>
+                <h2>Aperçu du beignet</h2>
+                    <div id="wrapper">
+                        <canvas id="canvasTypeBase" height="584" width="582"></canvas>
+                        <canvas id="canvasTypeGlacage" height="584" width="582"></canvas>
+                        <canvas id="canvasTypeSaupoudrage" height="584" width="582"></canvas>
+                    </div>
+            </aside>
+
+        </div>
+
+        
+        <div id="footer"></div>
+
+    </body>
+</html> 

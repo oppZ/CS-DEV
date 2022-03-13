@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Beignets lovers</title>
+        <link rel="icon" href="../images/site/page-icone.ico">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
+            defer="true">
+        </script>
+        <script
+            src="../js/shared.js"
+            defer="true">
+        </script>
+        <script
+            src="../js/index.js"
+            defer="true">
+        </script>
+        <script
+            src="../js/index_grille.js"
+            defer="true">
+        </script>
+	<script
+            src="../js/boutonHautPage.js"
+            defer="true">
+        </script>
+    </head>
+    <body onload= "load_grille()">
+    
+    <div id="header"></div>
+    <main>
+        <p>Notre entreprise a été créé en 1578. Tous nos beignets sont fait maison 
+            industriellement. Nous n'utilisons plus d'esclaves car nous croyons en 
+            l'égalité pour tous. L'amiante n'est plus utilisée commme ingrédient 
+            pour la pâte à beignet.</p>
+
+        <h1>...laissez vous tenter par un beignet préparé par nos soins...</h1>
+
+	<div id="choix_principal">
+            <template id="choix">
+                <div class="element" onclick = "choixBase('{{composants}}')">
+                    <h3>{{titre}}</h3>
+                    <img src= "../images/articles/predefinis/{{img_source}}.png" class="img_def">
+                    <p></br>{{description}}</br></p>
+                    <p>{{prix}} €</p>
+                </div>
+            </template>
+        </div>
+    </main>
+
+    <div id="hautPage"></div>
+    <div id="footer"></div>
+    </body>
+</html> 

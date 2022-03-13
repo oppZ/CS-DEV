@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Beignets lovers</title>
+        <link rel="icon" href="../images/site/page-icone.ico">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/panier.css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"
+            defer="true">
+        </script>
+        <script
+            src="../js/shared.js"
+            defer="true">
+        </script>
+        <script
+            src="../js/panier.js"
+            defer="true">
+        </script>
+        <script
+            src="../js/boutonHautPage.js"
+            defer="true">
+        </script>
+	<script
+            src="../js/resume_commande.js"
+            defer="true">
+        </script>
+    </head>
+
+    <body onload="remplir_panier()">
+
+        <div id="header"></div>
+        <div class="panier">
+            <main>
+                <h2>Entrez vos informations pour passer votre commande</h2>
+                <form name="connexion" onsubmit="validateForm()" method="post">
+                    <div id="connexion">
+                    <div id="left">
+                        <ul>
+                            <il><label for="nom">Nom<strong>*</strong></label></il>
+                            <il><label for="prenom">Prénom<strong>*</strong></label></il>
+                            <il><label for="mail">Adresse mail<strong>*</strong></label></il>
+                            <il><label for="telephone">Numéro de téléphone<strong>*</strong></label></il>
+                            <il><label for="livraisonAdresse">Adresse de livraison<strong>*</strong></label></il>
+                            <il><label for="livraisonDate">Date de livraison<strong>*</strong></label></il>
+                            <il><label for="renseignement">Renseignement</label></il>
+                        </ul>
+                    </div>
+                    <div id="right">
+                        <ul>
+                            <il><input type="text" id="nom" name="nom" placeholder="Nom" required></il>
+                            <il><input type="text" id="prenom" name="prenom" placeholder="Prénom" required></il>
+                            <il><input type="email" id="mail" name="mail" placeholder="Adresse e-mail" required></il>
+                            <il><input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone" required></il>
+                            <il><input type="text" id="livraisonAdresse" name="livraisonAdresse" placeholder="Adresse de livraison" required></il>
+                            <il><input type="date" id="livraisonDate" name="livraisonDate" required style="min-block-size: 16px;"></il>
+                            <il><input type="text" id="renseignement" name="renseignement" placeholder="Demandez nous un renseignement (optionel)"></il>
+                            <il><input type="reset" name="effacer" id="reset" value="Effacer"></il>
+                            <il><input type="submit" value="Valider"></il>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                </form>
+            </main>
+            <aside>
+                <h2>Récapitulatif de votre commande:</h2>
+
+                <div id="commande_panier">
+                    <template id="panier">
+                        <div class="description">
+                            <p>{{titre}}</p>
+                            <img src="{{img_src}}">
+                        </div>
+                        <div class="prix">
+                            <p>+ {{prix_de_base}} €</p>
+                        </div>
+                        <div class="suppr">
+                            <input type="image" src="" onclick="supprimer_element()"/>
+                        </div>
+                        
+                    </template>
+
+                    <template id="prix_total">
+                        <p>Prix total : {{prix_total}} €</p>
+                    </template>
+                </div>
+            </aside>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
