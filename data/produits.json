@@ -1,0 +1,63 @@
+{
+    "typeBase": [
+        {
+            "nom": "Beignet",
+            "id": "beignet",
+            "prix": 42
+        },
+        {
+            "nom": "Donut",
+            "id" : "donut",
+            "prix": 42
+        }
+    ],
+    "typeGlacage": [
+        {
+            "nom": "Aucun",
+            "id": "aucunGlacage",
+            "prix": 0
+        },
+        {
+            "nom": "Chocolat",
+            "id": "chocolat",
+            "prix": 42
+        },
+        {
+            "nom": "Fraise",
+            "id": "fraise",
+            "prix": 42
+        },
+        {
+            "nom": "Vanille",
+            "id": "vanille",
+            "prix": 42
+        }
+    ],
+    "typeSaupoudrage": [
+        {
+            "nom": "Aucun",
+            "id": "aucunSaupoudrage",
+            "prix": 0
+        },
+        {
+            "nom": "Vermicelles",
+            "id": "vermicelles",
+            "prix": 42
+        },
+        {
+            "nom": "Perles",
+            "id": "perles",
+            "prix": 42
+        },
+        {
+            "nom": "Sucre glace",
+            "id": "sucre",
+            "prix": 42
+        },
+        {
+            "nom": "Coulis de chocolat",
+            "id": "coulis",
+            "prix": 42
+        }
+    ]
+}
