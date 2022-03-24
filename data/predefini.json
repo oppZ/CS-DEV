@@ -5,7 +5,7 @@
             "image": "00",
             "description": "Le donut au pomme des pommiers ancestraux",
             "prix": "8",
-            "id": "_00",
+            "id": "00",
             "composants": ["donut","chocolat","sucre"]
         },
         {
